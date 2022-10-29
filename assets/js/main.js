@@ -2,14 +2,14 @@
   "use strict";
 
   /*======== Pre-loader ============*/
-  // var loader = function () {
-  //   setTimeout(function () {
-  //     if ($('#loader').length > 0) {
-  //       $('#loader').removeClass('show');
-  //     }
-  //   }, 1);
-  // };
-  // loader();
+  var loader = function () {
+    setTimeout(function () {
+      if ($('#loader').length > 0) {
+        $('#loader').removeClass('show');
+      }
+    }, 1);
+  };
+  loader();
 
   /*======== mobile menu ============*/
   const lineContainer = document.querySelector('.line-container');
@@ -21,12 +21,7 @@
 
 
 
-  /*====== sticky menu ========
-  1. window scroll করবো
-  2. কতটুকু scroll করবো
-  3. sticky class addClass করবো
-  4. sticky class removeClass করবো
-  */
+  /*====== sticky menu ========*/
   $(window).on('scroll', function () {
     if ($(this).scrollTop() > 0) {
       $('nav').addClass('sticky');
@@ -35,13 +30,7 @@
     }
   });
 
-  /*====== Scroll Back to Top ========
-  1. window scroll করবো
-  2. কতটুকু scroll করবো
-  3.  class/id কে fadeIn এবং fadeOut করবো
-  4. class/id তে click করবো
-  5. (html, body) scrollTop: 0 করবো
-  */
+  /*====== Scroll Back to Top ========*/
   $(window).on('scroll', function () {
     if ($(this).scrollTop() > 200) {
       $('#top').fadeIn();
@@ -56,11 +45,7 @@
     return false;
   });
 
-  /*======= Smooth scrolling on the navbar links ============================
-   ১. a তে click করে hash আছে কিনা চেক  if(this.hash) চেক করবো
-   ২. যদি hash থকে তাহলে el.preventDefault(); 
-   3. $('html, body').animate({scrollTop: $(this.hash).offset().top - 45}, 1500);
-  */ 
+  /*======= Smooth scrolling on the navbar links ============================*/ 
  $('.main-menu li a').on('click', function(el){
   if(this.hash){
     el.preventDefault();
@@ -70,13 +55,7 @@
   }
  })
 
-  /*======= navbar links scrolling and active =============
-  1. a এবং section ধরবো
-  2. function নিবো এবং এর মধ্যে section.length করবো
-  3. while(--len && window.scrollY + 110 < sec[len].offsetTop){}
-  4. a থেকে el.classList.remove('active');
-  5. links[len].classList.add('active'); করবো
-  */  
+  /*======= navbar links scrolling and active =============*/  
   const links = document.querySelectorAll('.main-menu li a');
   const sec = document.querySelectorAll('section');
   function activeMenu (){
