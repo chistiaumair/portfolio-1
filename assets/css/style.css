@@ -299,6 +299,9 @@ nav {
 .sticky a.active {
   color: green;
 }
+.sticky .line-container .line {
+  background: var(--primary);
+}
 
 .sticky .main-menu li a:hover,
 .sticky .main-menu li a.active {
@@ -359,9 +362,6 @@ nav {
   justify-content: space-between;
   cursor: pointer;
 }
-.line-container:hover .line {
-  background: var(--white);
-}
 .line-container .line {
   width: 100%;
   height: 3px;
@@ -385,8 +385,20 @@ nav {
 
 /*====== mobile ======*/
 @media (max-width: 576px) {
+  nav {
+    opacity: 1;
+  }
   .nav-wrapper {
     padding: 0 2rem;
+  }
+  .sticky .nav-wrapper {
+    background: var(--secondary);
+  }
+  .main-menu {
+    background: var(--primary);
+  }
+  .main-menu.active li a {
+    color: var(--secondary);
   }
 }
 /*====== tablets ======*/
@@ -455,8 +467,15 @@ nav {
 /*====== mobile ======*/
 @media (max-width: 576px) {
   .hero-text {
-    align-items: center;
+    text-align: center !important;
     width: 100%;
+  }
+  .hero-text h2 {
+    font-size: 2.5rem !important;
+    height: 2rem;
+  }
+  .hero-text .site-btn {
+    justify-content: center;
   }
 }
 .about-area .section-heading {
@@ -832,6 +851,14 @@ nav {
   background: var(--secondary);
 }
 
+/*====== mobile ======*/
+@media (max-width: 576px) {
+  .portfolio-menu li {
+    margin: 1px;
+    padding: 10px 4px;
+    font-size: 12px;
+  }
+}
 /*=========== Portfolio End ==============*/
 /*======== Price Start ===========*/
 .price-area .section-heading {

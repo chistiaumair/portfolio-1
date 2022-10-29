@@ -28,6 +28,10 @@ nav {
     a.active{
         color: green;
     }
+    .line-container .line {
+        background: var(--primary);
+       
+    }
 }
  
 .sticky .main-menu li a:hover,
@@ -94,11 +98,6 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    &:hover{
-        .line{
-            background: var(--white);
-        }
-    }
     .line{
         width: 100%;
         height: 3px;
@@ -118,10 +117,25 @@ nav {
 .line-container.active .line-3{
     transform: rotate(-40deg);
 }
+
+
 /*====== mobile ======*/
 @media (max-width: 576px) {
+    nav{
+        opacity: 1;
+    }
     .nav-wrapper{
         padding: 0 2rem;
+    }
+    .sticky .nav-wrapper{
+        background: var(--secondary);
+    }
+    .main-menu{
+        background: var(--primary);
+        
+        &.active li a {
+            color: var(--secondary);
+        }
     }
 }
 
