@@ -1,0 +1,74 @@
+/*============= section padding top and bottom =====================*/
+.pt {
+    padding-top: 8rem;
+}
+
+.pb {
+    padding-bottom: 8rem;
+}
+
+/*===== Section Heading =========*/
+
+
+.section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    h5 {
+        position: relative;
+        padding-left: 6rem;
+
+        &::before {
+            width: 4rem;
+            height: .3rem;
+            position: absolute;
+            content: '';
+            background: var(--primary);
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+
+        &::after {
+            width: .4rem;
+            height: 0.3rem;
+            position: absolute;
+            content: "";
+            background: var(--primary);
+            top: 50%;
+            transform: translateY(-50%);
+            left: 4.5rem;
+        }
+    }
+}
+
+/*===== Site Button =========*/
+.btn-1 {
+    padding: 1rem 2.5rem;
+    box-shadow: inset 0 0 0 5rem var(--secondary);
+    color: var(--primary);
+    border: .2rem solid var(--secondary);
+    transition: .3s;
+
+    &:hover {
+        background: var(--primary);
+        color: var(--secondary);
+        box-shadow: inset 0 0 0 0 var(--secondary);
+    }
+}
+
+.btn-2 {
+    padding: 1rem 2.5rem;
+    box-shadow: inset 0 0 0 5rem var(--primary);
+    border: .2rem solid var(--primary);
+    color: var(--secondary);
+    transition: .3s;
+
+    &:hover {
+        background: var(--secondary);
+        box-shadow: inset 0 0 0 0 var(--primary);
+        color: var(--primary);
+    }
+}

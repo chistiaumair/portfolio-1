@@ -1,0 +1,37 @@
+
+/*=========== Footer ===============*/
+footer.footer-area {
+    background: var(--primary);
+    text-align: center;
+}
+
+.footer-content {
+    border-bottom: 1px solid var(--secondary);
+    h3{
+        color: var(--secondary);
+    }
+}
+
+.footer-content h5 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+    color: var(--secondary);
+}
+
+.footer-content h5 p span {border-left: 2px solid var(--secondary);padding: 0 2rem;margin-left: 2rem;}
+
+.footer-social a {
+    color: var(--secondary);
+    margin-left: 2rem;
+}
+
+.footer-copywight p, a {
+    color: var(--secondary);
+}
+
+.footer-copywight {
+    margin-top: 2rem;
+} 
+/*=========== Footer end ===============*/ 

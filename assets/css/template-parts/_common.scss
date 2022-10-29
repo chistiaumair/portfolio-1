@@ -1,0 +1,159 @@
+/*=================================================
+    Tamplate Name: 
+    Tamplate URI:
+    Authore Name: Chistia
+    Authore URI:
+    Support:
+    Version:v-1.0
+==================================================*/
+
+/*=================================================
+                COMMON CSS
+==================================================*/
+
+/*===============Font Name================*/ 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/*===============Font Color================*/ 
+:root {
+    --primary: #A4193D;
+    --secondary: #CED46A;
+    --white: #FFFFFF;
+    --black: #161B21;
+    --gray: #969696;
+    --light-gray: #DCE2F0;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /*
+        1px = 6.25% 
+        10px = 6.5% * 10px = 62.5%
+        1rem = 10px
+    */ 
+    font-size: 62.5%;
+}
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing:-.00278rem;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+a, a:hover, a:focus{
+    text-decoration: none;
+    color: var(--black);
+}
+ol,ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+input:focus, button:focus,textarea:focus {
+    outline: none;
+}
+
+
+p {
+    margin: 0;
+    line-height: 1.8;
+}
+img{
+    border: 0;
+    max-width: 100%;
+}
+sub, sup { 
+	line-height: 0;
+}
+/*=============Heading font name and size=====================*/ 
+$heading: (h1, 5.5rem, 700), (h2, 4rem, 600), (h3, 3.2rem, 600), (h4, 2.4rem, 500), (h5, 2rem, 500), (h6, 1.6rem, 400);
+@each $headingName, $headingFontSize, $headingFontWeight in $heading {
+    #{$headingName} {
+        font-size: $headingFontSize !important;
+        font-weight: $headingFontWeight;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+ 
+
+
+/*====== Scroll To Top ==========*/ 
+#top{
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    border-radius: 50%;
+    background: tomato;
+    color: white;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    display: none;
+}
+
+
+/*======== Pre-loader ==============*/ 
+#loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .3s ease-out, visibility 0s linear .3s;
+    -o-transition: opacity .3s ease-out, visibility 0s linear .3s;
+    transition: opacity .3s ease-out, visibility 0s linear .3s;
+    z-index: 999;
+}
+
+#loader.show {
+    -webkit-transition: opacity .6s ease-out, visibility 0s linear 0s;
+    -o-transition: opacity .6s ease-out, visibility 0s linear 0s;
+    transition: opacity .6s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+#loader .loader {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border: 5px solid #dddddd;
+    border-top: 5px solid #EF233C;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*======== Pre-loader end ==============*/ 

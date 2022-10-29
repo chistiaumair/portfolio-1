@@ -1,0 +1,47 @@
+/*======== Blog Start ===========*/
+.blog-item {
+    &:hover img {
+        transform: scale(1.2);
+    }
+}
+
+.blog-img {
+    overflow: hidden;
+
+    img {
+        transition: .3s;
+    }
+
+}
+
+
+.blog-content {
+    border: 1px solid #ddd;
+    padding: 4rem 3rem;
+
+    h5 {
+        margin-bottom: .5rem;
+        color: var(--primary);
+    }
+
+    span {
+        &:not(:first-child) {
+            margin-left: 2rem;
+        }
+
+        i {
+            margin-right: .5rem;
+            color: var(--primary);
+        }
+
+    }
+    .desc {
+        margin: 2rem 0;
+    }
+    .blog-btn {
+        margin-top: 4rem;
+    }
+}
+
+
+    /*======== Blog End ===========*/

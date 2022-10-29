@@ -1,0 +1,60 @@
+/*======== Testimonial Start ==============*/
+.testimonial-area {
+    background: var(--primary);
+    .owl-carousel .owl-item img {
+        width: auto;
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+        background: var(--secondary);
+    }
+    
+}
+
+.testi-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.testi-icon {
+    font-size: 6rem;
+    color: var(--secondary);
+    margin-bottom: 3rem;
+}
+
+.testi-img img {
+    position: absolute;
+    bottom: calc(100% + -6rem);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    border: .5rem dotted var(--secondary);
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.testi-content {
+    background: var(--secondary);
+    position: relative;
+    border-radius: 50rem;
+    width: 64%;
+    text-align: center;
+    padding: 7rem 7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    h5{
+        color: var(--primary);
+    }
+}
+
+/*====== mobile ======*/ 
+@media (max-width: 575.98px) {
+    .testi-content{
+        width: 100%;
+        border-radius: 0;
+    }
+    
+}

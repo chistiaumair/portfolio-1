@@ -1,0 +1,94 @@
+/*=========== Portfolio start ==============*/
+.portfolio-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.portfolio-menu li {
+        margin: 5px;
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--secondary);
+        border: 2px solid var(--primary);
+        box-shadow: inset 0 0 0 50px var(--primary);
+        transition: ease-out 0.3s;
+        cursor: pointer;
+
+    &:hover,
+    &.filter-active {
+        color: var(--primary);
+        background: var(--secondary);
+        box-shadow: inset 0 0 0 0 var(--primary);
+    }
+
+}
+
+
+
+
+.portfolio__item {
+    position: relative;
+    margin-bottom: 6rem;
+
+    &:hover .portfolio__img img {
+        transform: scale(1.2);
+    }
+
+    &:hover {
+        .portfolio__text a i {
+            box-shadow: inset 0 0 0 0 var(--white);
+        }
+    }
+}
+
+
+
+.portfolio__img {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        transition: .5s;
+    }
+}
+
+
+
+.portfolio__text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    left: 50%;
+    transform: translatex(-50%);
+    top: calc(100% - 3rem);
+    background: var(--secondary);
+    padding: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.portfolio__text .btn-3 {
+    width: 5rem;
+    height: 5rem;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--secondary);
+    border: 2px solid var(--primary);
+    box-shadow: inset 0 0 0 5rem var(--primary);
+    transition: ease-out 0.3s;
+
+}
+
+.portfolio__item:hover .btn-3 {
+    box-shadow: inset 0 0 0 0 var(--primary);
+    color: var(--primary);
+    background: var(--secondary);
+}
+/*=========== Portfolio End ==============*/

@@ -1,0 +1,51 @@
+/*======== Price Start ===========*/
+.price-area {
+    .section-heading {
+        margin-bottom: 6rem;
+    }
+
+    .col-lg-4 {
+        padding: 0;
+    }
+}
+
+.price-wrapper {
+    max-width: 80%;
+    display: flex;
+}
+
+.price-item {
+    padding: 6rem 0;
+    text-align: center;
+}
+.price-item-3 {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.price-header {
+    margin-bottom: -2rem;
+    h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 6rem !important;
+        color: var(--primary);
+        gap: 1rem;
+        margin-top: -1rem;
+    
+        sup,
+        sub {
+            font-size: 2rem;
+        }
+    }
+}
+
+.price-option {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+
+
+/*======== Price End ===========*/
