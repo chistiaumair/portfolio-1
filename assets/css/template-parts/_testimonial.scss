@@ -38,8 +38,7 @@
 .testi-content {
     background: var(--secondary);
     position: relative;
-    border-radius: 50rem;
-    width: 64%;
+    border-radius: 12rem;
     text-align: center;
     padding: 7rem 7rem 2rem;
     display: flex;
@@ -51,10 +50,19 @@
 }
 
 /*====== mobile ======*/ 
-@media (max-width: 575.98px) {
-    .testi-content{
+@media only screen and (max-width: 576px){
+    .testi-item .testi-content{
         width: 100%;
         border-radius: 0;
     }
-    
+
 }
+@media only screen and (min-width: 1200px){
+    .testi-item .testi-content{
+        width: 70%;
+        border-radius: 12rem;
+    }
+
+}
+
+

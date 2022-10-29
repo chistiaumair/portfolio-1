@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
+    margin-bottom: 1.5rem;
     transition: all .3s ease-out;
     &:hover{
         box-shadow: inset 70rem 0 0 0 var(--primary);
@@ -90,3 +91,24 @@
         justify-content: center;
     }
 }
+/*====== Laptop ======*/ 
+@media only screen and (min-width: 992px){
+    .team-item {
+        gap: 0;
+        margin: 1rem;
+        margin-bottom: 2rem;
+    }
+    .team-img {
+        min-height: 0;
+    }
+    .team-item:hover {
+        box-shadow: inset 90rem 0 0 0 var(--primary);
+    }
+
+    .team-content {
+        width: calc(100% - 18rem);
+        padding-left: 2rem;
+    }
+    
+}
+
