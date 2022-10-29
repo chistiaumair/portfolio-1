@@ -1062,8 +1062,7 @@ nav {
 @media only screen and (min-width: 992px) {
   .team-item {
     gap: 0;
-    margin: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
   .team-img {
     min-height: 0;
