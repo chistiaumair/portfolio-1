@@ -82,9 +82,9 @@ $heading: (h1, 5.5rem, 700), (h2, 4rem, 600), (h3, 3.2rem, 600), (h4, 2.4rem, 50
     #{$headingName} {
         font-size: $headingFontSize !important;
         font-weight: $headingFontWeight;
-        line-height: 1.6;
         margin: 0;
         padding: 0;
+        
     }
 }
 

@@ -16,28 +16,16 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--secondary);
+    background: var(--primary);
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     color: var(--primary);
-    .logo a {
-        color: var(--primary);
-    }
-    .main-menu li a {
-        color: var(--primary);
-    }
-    a.active{
-        color: green;
-    }
     .line-container .line {
-        background: var(--primary);
+        background: var(--secondary);
        
     }
 }
  
-.sticky .main-menu li a:hover,
-.sticky .main-menu li a.active{
-    color: green;
-}
+
 .nav-wrapper {
     position: relative;
     height: 10rem;
@@ -126,16 +114,11 @@ nav {
     }
     .nav-wrapper{
         padding: 0 2rem;
-    }
-    .sticky .nav-wrapper{
-        background: var(--secondary);
+        background: var(--primary);
+        border-bottom: 1px dashed var(--secondary);
     }
     .main-menu{
         background: var(--primary);
-        
-        &.active li a {
-            color: var(--secondary);
-        }
     }
 }
 
