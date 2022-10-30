@@ -19,7 +19,9 @@
     mainMenu.classList.toggle('active');
   });
 
-
+$('.main-menu li a').on('click', function(){
+  $('.main-menu, .line-container').removeClass('active');
+})
 
   /*====== sticky menu ========*/
   $(window).on('scroll', function () {
